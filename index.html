@@ -45,7 +45,7 @@
             <label id="number-label" for="number"
               >Phone number</label>
             <input
-              type="number"
+              type="tel"
               name="phone-number"
               id="number"
               class="form-control"
@@ -74,35 +74,45 @@
                 class="input-radio"
                 checked
               />Definitely</label>
-            <label>
+           <!-- <label>
               <input
                 name="user-recommend"
                 value="maybe"
                 type="radio"
                 class="input-radio"
               />Maybe</label
-            >
+            >-->
       
             <label
               ><input
                 name="user-recommend"
-                value="not-sure"
+                value="no"
                 type="radio"
                 class="input-radio"
-              />Not sure</label
+              />No</label
             >
+          </div>
+           
+            <div class="form-group">
+            <p>If No, why?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
           </div>
       
           <div class="form-group">
             <p>
-              What is the best part of Camden Square in your opinion?
+              How would you rate our store?
             </p>
             <select id="most-like" name="mostLike" class="form-control" required>
               <option disabled selected value>Select an option</option>
-              <option value="customer-service">Customer Service</option>
-              <option value="suit-styles">Suit Styles</option>
-              <option value="all">All the options above</option>
-              <option value="none">None of the options above</option>
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="ok">Ok</option>
+              <option value="notgood">Not Good</option>
             </select>
           </div>
       
